@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Processamento Assincrono</title>
+
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="stateDisplay">CONONAVÍRUS - BRASIL</h1>
+    </header>
+    <main class="container">
+        <section id="input-cep">
+            <div id="form">
+                <form action="" onsubmit="Form.submit(event)">
+                    <div class="input-group">
+                        <label for="cep-search">CEP da Cidade</label>
+                        <input 
+                            type="text" 
+                            id="cep-search"
+                            placeholder=""
+                            name="CepSearchBar"
+                        |>
+                        <button type="submit">Pesquisar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="display-datas">
+            <div class="card total-cases">
+                <h3>
+                    <span>Casos Confirmados</span>
+                    <i class="fa-solid fa-arrows-up-down"></i>
+                </h3>
+                <p class="resultDisplay" id="casesDisplay">2.505.607</p>
+            </div>
+            <div class="card total-suspects">
+                <h3>
+                    <span>Total Suspeitos</span>
+                    <i class="fa-solid fa-arrows-up-down"></i>
+                </h3>
+                <p class="resultDisplay" id="suspectsDisplay">1.254</p>
+            </div>
+            <div class="card total-deaths">
+                <h3>
+                    <span>Total Óbitos</span>
+                    <i class="fa-solid fa-arrows-up-down"></i>
+                </h3>
+                <p class="resultDisplay" id="deathsDisplay">75.606</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Criado por - <a href="https://www.linkedin.com/in/wilson-brandao-costa/">Wilson Brandão</a></p>
+    </footer>
+<script src="https://kit.fontawesome.com/8e023dfd6e.js" crossorigin="anonymous"></script>
+<script src="assets/js/index.js"></script>    
+</body>
+</html>
