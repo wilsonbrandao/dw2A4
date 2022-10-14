@@ -1,0 +1,145 @@
+/* Global ============================= */
+:root {
+    --green: green;
+    --red: red;
+    --blue: rgb(25, 49, 72);
+    --light-green: rgb(29, 165, 132);
+    --font-Poppins: 'Poppins'
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f2f5;
+    font-family: var(--font-Poppins), sans-serif;
+}
+
+.container {
+    width: min(90vw, 1000px);
+    margin: auto;
+}
+
+/* Header ============================= */
+header {
+    background-color: white;
+    padding: 2rem 0 2rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    text-align: center;
+    color: var(--blue);
+}
+
+/* Section input-cep ============================= */
+#input-cep {
+    margin: 20px 0px;
+}
+
+form.input-group {
+    display: flex;
+    flex-direction: row;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--blue);
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+form button {
+    background: var(--light-green);
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: var(--font-Poppins);
+    color: white;
+}
+
+/* Section display-datas ============================= */
+
+section#display-datas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section#display-datas .card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    height: 200px;
+    width: 100%;
+    min-width: 250px;
+    color: var(--blue);
+    text-align: center;
+    margin-right: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+section#display-datas .total-cases {
+    background: var(--light-green);
+    color: white;
+}
+
+
+
+section#display-datas .card i {
+    background-color: var(--light-green);
+    font-size: .8rem;
+    padding: 5px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+section#display-datas .total-cases i {
+    background-color: white;
+    color: gray;
+}
+
+.card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.resultDisplay {
+    font-size: 2rem;
+    margin: 20px 0px 0px;
+    font-weight: bold;   
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* Footer ============================= */
+footer{
+    margin-top: 50px;
+    text-align: center;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+footer p > a {
+    text-decoration: none;
+    color: var(--light-green);
+}
+
+

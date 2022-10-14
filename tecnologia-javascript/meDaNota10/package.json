@@ -1,0 +1,14 @@
+{
+  "name": "medanota10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "compilar": "electron-packager ./ medanota10 --plataform=windows --arch=x64 --out ./compilado/medanota10 --app-version 1.0.0 --electron-version 21.1.1 --overwrite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
