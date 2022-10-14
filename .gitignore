@@ -1,4 +1,4 @@
 node_modules
-compilado
+/meDaNota10/compilado
 
-medanota10.exe
+*.exe
